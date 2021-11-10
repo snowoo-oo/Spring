@@ -19,7 +19,9 @@ public class ApplicationContextInfoTest {
 
         }
 
-    }@Test
+    }
+
+    @Test
     @DisplayName("app bean 출력하기")
     void findAplicationBean(){
         for (String beanDefinitionName : applicationContext.getBeanDefinitionNames()) {
