@@ -20,9 +20,9 @@ public class ConfigurationSingletonsTest {
         MemberRepository memberRepository = annotationConfigApplicationContext.getBean("memberRepository", MemberRepository.class);
 
         MemberRepository memberRepository1 = memberService.getMemberRepository();
-        MemberRepository memberRepository2 = orderService.getMemberRepository();
+        //MemberRepository memberRepository2 = orderService.getMemberRepository();
         System.out.println("memberService -> memberRepository1 = " + memberRepository1);
-        System.out.println("orderService -> memberRepository2 = " + memberRepository2);
+        //System.out.println("orderService -> memberRepository2 = " + memberRepository2);
         System.out.println("memberRepository = " + memberRepository);
 
         Assertions.assertThat(memberService.getMemberRepository()).isSameAs(memberRepository);
